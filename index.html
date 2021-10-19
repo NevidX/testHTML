@@ -12,26 +12,117 @@
     <title>Document</title>
 </head>
 
-<body>
+<body id="body">
     <div class="wrapper">
-        <!-- HEADER S -->
-        <header class='header'>
-            <div class="header__logo">
-                <div class="header__logo-img"><img src="" alt=""></div>
-                <div class="header__logo-text">
-                    <div class="header__logo-title"></div>
-                    <div class="header__logo-subtitle"></div>
+        <div class="container">
+            <!-- HEADER S -->
+            <header class='header'>
+                <!-- HEADER LOGO S -->
+                <div class="header__logo">
+                    <div class="header__logo-img"><img src="img/icons/Logo.svg" alt=""></div>
+                    <div class="header__logo-text">
+                        <div class="header__logo-title">Исупб техэксперт</div>
+                        <div class="header__logo-subtitle">интегрированная система управления производственной
+                            безопасностью </div>
+                    </div>
+                </div>
+                <!--  -->
+
+                <!-- HEADER SERVICES S -->
+                <div class="header__services services">
+                    <div class="services__head-section">
+                        <a target="_blank" class="info-link services__info-link"
+                            href="https://yandex.ru/maps/geo/kirov/53104980/?from=tabbar&ll=49.570865%2C58.582682&source=serp_navig&z=11"><img
+                                src="img/icons/Map-sign.svg" alt="">Киров</a>
+                        <div class="services__search">
+                            <img src="img/icons/Search.svg" alt="">
+                            <input type="text" placeholder="Найти здесь">
+                        </div>
+                    </div>
+                    <div class="services__footer-section">
+                        <ul class="services-links">
+                            <li class="services-link"><a href="">Услуги</a></li>
+                            <li class="services-link"><a href="">Модули</a></li>
+                            <li class="services-link"><a href="">Внедрение</a></li>
+                            <li class="services-link"><a href="">О системе</a></li>
+                            <li class="services-link"><a id="contacts" href="#">Контакты</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!--  -->
+
+                <!-- HEADER CONTACTS -->
+                <div class="header__contacts contacts">
+                    <a target="_blank" class="info-link contacts__info-link"
+                        href="https://yandex.ru/maps/46/kirov/house/ulitsa_vorovskogo_78a/YEAYcARjQUQCQFtifXl4c3VkYA==/?from=tabbar&ll=49.633815%2C58.592975&source=serp_navig&z=17"><img
+                            src="img/icons/Map-sign.svg" alt="">Воровского 78а
+                    </a>
+                    <a class="info-link contacts__info-link"><img src="img/icons/Clock.svg" alt="">Пн-Пт с 8:00 до
+                        17:00</a>
+                    <a class="info-link contacts__info-link" href="mailto:info@isu-pb.ru"><img src="img/icons/Email.svg"
+                            alt="">info@isu-pb.ru
+                    </a>
+                    <a class="contacts__phone" href="tel:88005504820">8-800-550-48-20</a>
+                    <div class="btn contatcs__btn">Заказать звонок</div>
+                    <div class="contacts__social-media social-media">
+                        <a class="social-media__link" href=""><img src="img/icons/Telegram.svg" alt=""></a>
+                        <a class="social-media__link" href=""><img src="img/icons/Viber.svg" alt=""></a>
+                        <a class="social-media__link" href=""><img src="img/icons/Whatsapp.svg" alt=""></a>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="burger__trigger"><span></span></div>
+            </header>
+            <!-- HEADER E -->
+
+            <!-- BURGER  S-->
+
+            <div class="burger__body">
+                <div class="burger__content">
+                    <div class="services__head-section">
+                        <a target="_blank" class="info-link services__info-link"
+                            href="https://yandex.ru/maps/geo/kirov/53104980/?from=tabbar&ll=49.570865%2C58.582682&source=serp_navig&z=11"><img
+                                src="img/icons/Map-sign.svg" alt="">Киров</a>
+                        <div class="services__search">
+                            <img src="img/icons/Search.svg" alt="">
+                            <input type="text" placeholder="Найти здесь">
+                        </div>
+                    </div>
+                    <div class="services__footer-section">
+                        <ul class="services-links">
+                            <li class="services-link"><a href="">Услуги</a></li>
+                            <li class="services-link"><a href="">Модули</a></li>
+                            <li class="services-link"><a href="">Внедрение</a></li>
+                            <li class="services-link"><a href="">О системе</a></li>
+                            <li class="services-link"><a id="contacts" href="#">Контакты</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="header__services services">
-                <div class="services__head-section">
-                    <div class="services__location"></div>
-                    <div class="services__search"></div>
+
+            <!--  -->
+            <div class="header__contacts contacts__adaptive">
+                <a target="_blank" class="info-link contacts__info-link"
+                    href="https://yandex.ru/maps/46/kirov/house/ulitsa_vorovskogo_78a/YEAYcARjQUQCQFtifXl4c3VkYA==/?from=tabbar&ll=49.633815%2C58.592975&source=serp_navig&z=17"><img
+                        src="img/icons/Map-sign.svg" alt="">Воровского 78а
+                </a>
+                <a class="info-link contacts__info-link"><img src="img/icons/Clock.svg" alt="">Пн-Пт с 8:00 до
+                    17:00</a>
+                <a class="info-link contacts__info-link" href="mailto:info@isu-pb.ru"><img src="img/icons/Email.svg"
+                        alt="">info@isu-pb.ru
+                </a>
+                <a class="contacts__phone" href="tel:88005504820">8-800-550-48-20</a>
+                <div class="btn contatcs__btn">Заказать звонок</div>
+                <div class="contacts__social-media social-media">
+                    <a class="social-media__link" href=""><img src="img/icons/Telegram.svg" alt=""></a>
+                    <a class="social-media__link" href=""><img src="img/icons/Viber.svg" alt=""></a>
+                    <a class="social-media__link" href=""><img src="img/icons/Whatsapp.svg" alt=""></a>
                 </div>
             </div>
-        </header>
-        <!-- HEADER E -->
+        </div>
     </div>
 </body>
+<script src="js/contacts.js"></script>
+<!-- <script src="js/burger.js"></script> -->
 
 </html>

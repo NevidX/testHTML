@@ -1,0 +1,114 @@
+.burger__trigger {
+	display: none;
+}
+$burgerButtonColor: black;
+@media (max-width: $md2) {
+	.burger__trigger {
+		display: block;
+		cursor: pointer;
+		width: 25px;
+		height: 25px;
+		position: absolute;
+		right: 5%;
+		top: 40%;
+		&:before {
+			content: "";
+			display: block;
+			top: 0;
+			width: 30px;
+			height: 3px;
+			background-color: $burgerButtonColor;
+			transition: all 0.3s ease;
+		}
+		span {
+			display: block;
+			position: absolute;
+			width: 30px;
+			height: 3px;
+			background-color: $burgerButtonColor;
+			margin-top: 8px;
+		}
+		&:after {
+			content: "";
+			display: block;
+			position: absolute;
+			bottom: 0;
+			width: 30px;
+			height: 3px;
+			background-color: $burgerButtonColor;
+			transition: all 0.3s ease;
+		}
+	}
+
+	.active {
+		cursor: pointer;
+		width: 25px;
+		height: 25px;
+		transition: all 0.1s ease;
+		&:before {
+			content: "";
+			display: block;
+			top: 0;
+			width: 30px;
+			height: 3px;
+			background-color: $burgerButtonColor;
+			transform: rotateZ(-45deg);
+			margin-top: 9px;
+			transition: all 0.3s ease;
+		}
+		span {
+			display: block;
+			position: absolute;
+			width: 30px;
+			height: 3px;
+			background-color: $burgerButtonColor;
+			margin-top: 12px;
+			opacity: 0;
+		}
+		&:after {
+			content: "";
+			display: block;
+			position: absolute;
+			bottom: 0;
+			width: 30px;
+			height: 3px;
+			background-color: $burgerButtonColor;
+			transform: rotateZ(45deg);
+			margin-bottom: 13px;
+			transition: all 0.3s ease;
+		}
+	}
+}
+.burger__body {
+	height: 100vh;
+	overflow: auto;
+	width: 100%;
+	transition: ease 1s;
+	background-color: rgba(233, 200, 241, 0.753);
+	z-index: 10;
+	position: absolute;
+}
+
+.burger__content {
+	padding: 10px 100px 0 100px;
+	.nav__link {
+		a {
+			color: black;
+			font-size: 20px;
+		}
+	}
+	.services__head-section {
+		margin-bottom: 40px;
+	}
+
+	.services-links {
+		display: flex;
+		font-weight: 500;
+		font-size: 16px;
+		justify-content: space-between;
+		white-space: nowrap;
+		a {
+			color: black;
+		}
+	}
+}
