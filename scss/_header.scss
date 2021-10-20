@@ -9,34 +9,6 @@
 	}
 }
 
-// LOGO S
-.header__logo {
-	display: flex;
-	max-width: 230px;
-	max-height: 88px;
-}
-.header__logo-img {
-	img {
-		max-width: 81px;
-		max-height: 88px;
-	}
-}
-
-.header__logo-text {
-	padding-top: 23px;
-	padding-left: 10px;
-	text-transform: uppercase;
-	font-size: 23px;
-}
-.header__logo-title {
-	font-weight: bold;
-}
-.header__logo-subtitle {
-	font-size: 6.5px;
-	line-height: 10px;
-}
-// =============================
-
 // SERVICES S
 .header__services {
 	display: flex;
@@ -75,6 +47,11 @@
 	}
 }
 .services-link {
+	a {
+		&:hover {
+			text-decoration: underline;
+		}
+	}
 }
 // ==============================
 

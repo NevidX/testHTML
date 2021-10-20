@@ -80,8 +80,7 @@ $burgerButtonColor: black;
 	}
 }
 .burger__body {
-	height: 100vh;
-	overflow: auto;
+	overflow-y: auto;
 	width: 100%;
 	transition: ease 1s;
 	background-color: rgba(233, 200, 241, 0.753);
@@ -90,7 +89,9 @@ $burgerButtonColor: black;
 }
 
 .burger__content {
-	padding: 10px 100px 0 100px;
+	padding: 10px 10px 0 10px;
+	overflow-y: auto;
+	overflow-x: hidden;
 	.nav__link {
 		a {
 			color: black;
@@ -99,16 +100,28 @@ $burgerButtonColor: black;
 	}
 	.services__head-section {
 		margin-bottom: 40px;
+		height: 80px;
+		@media (max-width: $md3) {
+			flex-direction: column;
+			justify-content: space-between;
+		}
 	}
 
 	.services-links {
-		display: flex;
+		display: block;
+		line-height: 30px;
 		font-weight: 500;
 		font-size: 16px;
-		justify-content: space-between;
-		white-space: nowrap;
 		a {
 			color: black;
 		}
+	}
+	.header__contacts {
+		margin-top: 10px;
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+	.contacts__social-media {
+		display: block;
 	}
 }

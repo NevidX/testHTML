@@ -1,7 +1,7 @@
 const trigger = document.querySelectorAll(".burger__trigger");
 const body = document.querySelectorAll(".burger__body");
 const style = "active";
-const contentWidth = "100vh";
+const contentHeight = "100%";
 
 
 trigger.forEach((item, i) => {
@@ -16,7 +16,7 @@ trigger.forEach((item, i) => {
 			document.getElementById("body").style.overflowY = "scroll"
 		}
 		if (body[i].style.height === "0px") {
-			body[i].style.height = contentWidth;
+			body[i].style.height = contentHeight;
 		} else {
 			body[i].style.height = "0";
 		}
