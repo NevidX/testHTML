@@ -248,6 +248,11 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 8px;
 }
 
+.services__search img {
+  width: 20px;
+  height: 20px;
+}
+
 .services__search input {
   background: none;
   line-height: 150%;
