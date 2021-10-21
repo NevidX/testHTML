@@ -5,6 +5,10 @@
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
+	@media (max-width: $md1) {
+		flex-direction: column;
+		align-items: center;
+	}
 }
 .intro__img-block {
 	margin-left: -4.1%;
@@ -75,6 +79,14 @@
 	font-size: 40px;
 	line-height: 49px;
 	margin-bottom: 19px;
+	@media (max-width: $md1) {
+		padding-top: 100px;
+	}
+	@media (max-width: $md4) {
+		padding: 40px 5px 0 5px;
+		font-size: 30px;
+		padding-top: 100px;
+	}
 }
 .intro__form-subtitle {
 	font-weight: 300;
@@ -82,11 +94,18 @@
 	line-height: 17px;
 	margin-bottom: 104px;
 	max-width: 380px;
+	@media (max-width: $md4) {
+		padding: 0 5px 0 5px;
+	}
 }
 .intro__form-user-data {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	row-gap: 1em;
+	@media (max-width: $md4) {
+		grid-template-columns: 1fr;
+		padding-left: 3%;
+	}
 }
 .form-info {
 	width: 180px;
@@ -130,6 +149,9 @@
 	&:first-child {
 		color: #ea5800;
 		font-size: 20px;
+	}
+	@media (max-width: $md4) {
+		padding-left: 3%;
 	}
 }
 
@@ -183,9 +205,18 @@
 	align-items: center;
 	justify-content: space-between;
 	margin: 0 auto;
+	@media (max-width: $md2) {
+		padding: 10% 0 10% 0;
+		flex-direction: column;
+		height: 550px;
+	}
 }
 .access-section__hexagons {
 	position: relative;
+	@media (max-width: $md2) {
+		left: 0;
+		width: 700px;
+	}
 }
 // ACCESS HEAGONS===============
 .access-section__hexagon {

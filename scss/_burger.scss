@@ -105,7 +105,11 @@ $burgerButtonColor: black;
 		flex-direction: column;
 		justify-content: space-between;
 	}
-
+	.services__search {
+		@media (max-width: $md5) {
+			width: 270px;
+		}
+	}
 	.services-links {
 		display: block;
 		line-height: 30px;
