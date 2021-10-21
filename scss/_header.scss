@@ -37,15 +37,23 @@
 .services__footer-section {
 }
 .services-link__arrow {
-	position: absolute;
-	top: 3px;
-	right: -20px;
-	transform: rotate(180deg);
-	cursor: pointer;
+	display: none;
 }
-.services-link__arrow-active {
-	transform: rotate(0);
+@media (max-width: $md1) {
+	.services-link__arrow {
+		display: inline-block;
+		position: absolute;
+		top: 3px;
+		right: -20px;
+		transform: rotate(180deg);
+		cursor: pointer;
+	}
+
+	.services-link__arrow-active {
+		transform: rotate(0);
+	}
 }
+
 .services-links {
 	display: flex;
 	font-weight: 500;

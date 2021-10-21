@@ -252,17 +252,23 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .services-link__arrow {
-  position: absolute;
-  top: 3px;
-  right: -20px;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-  cursor: pointer;
+  display: none;
 }
 
-.services-link__arrow-active {
-  -webkit-transform: rotate(0);
-          transform: rotate(0);
+@media (max-width: 1413.98px) {
+  .services-link__arrow {
+    display: inline-block;
+    position: absolute;
+    top: 3px;
+    right: -20px;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    cursor: pointer;
+  }
+  .services-link__arrow-active {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
 }
 
 .services-links {
