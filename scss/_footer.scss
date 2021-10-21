@@ -49,18 +49,20 @@ a {
 .footer__main {
 	padding: 40px 0 30px 0;
 	display: flex;
+	flex-wrap: wrap;
 	width: 100%;
 	justify-content: space-between;
 	border-top: 2px solid #d8d8d8;
 	border-bottom: 2px solid #d8d8d8;
-	@media (max-width: $md2) {
+	@media (max-width: $md3) {
 		display: block;
 	}
 }
 .footer__info-colomn {
 	max-width: 280px;
+	margin-top: 20px;
 	&:not(:last-child) {
-		margin-right: 25px;
+		margin-right: 50px;
 	}
 }
 .footer__info-title {
