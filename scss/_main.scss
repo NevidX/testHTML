@@ -170,6 +170,8 @@
 .intro__module {
 	max-width: 140px;
 	text-align: center;
+	cursor: pointer;
+	user-select: none;
 }
 .intro__module-hexagon {
 	position: relative;
@@ -187,6 +189,7 @@
 	}
 }
 .intro__module-text {
+	cursor: pointer;
 }
 .intro__modules-btn {
 	margin-top: 20%;
@@ -248,6 +251,10 @@
 	height: 50px;
 	font-size: 18px;
 	line-height: 22px;
+	@media (max-width: $md4) {
+		font-size: 14px;
+		width: 330px;
+	}
 }
 
 // ====================================

@@ -433,7 +433,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .burger__content {
   padding: 10px 10px 0 10px;
-  height: 70%;
+  height: 100%;
   overflow-y: auto;
   overflow-x: hidden;
 }
@@ -486,6 +486,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .footer {
   background: #f7f7f7;
+}
+
+a {
+  color: black;
 }
 
 .footer__section {
@@ -919,6 +923,11 @@ h1, h2, h3, h4, h5, h6 {
 .intro__module {
   max-width: 140px;
   text-align: center;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .intro__module-hexagon {
@@ -935,6 +944,10 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   top: 50px;
   left: 40px;
+}
+
+.intro__module-text {
+  cursor: pointer;
 }
 
 .intro__modules-btn {
@@ -1016,5 +1029,12 @@ h1, h2, h3, h4, h5, h6 {
   height: 50px;
   font-size: 18px;
   line-height: 22px;
+}
+
+@media (max-width: 479.98px) {
+  .access-section__btn {
+    font-size: 14px;
+    width: 330px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
