@@ -113,7 +113,7 @@ $unicMD: 1124px;
 .intro__form-user-data {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	row-gap: 1em;
+	row-gap: 1.5em;
 	@media (max-width: $md4) {
 		grid-template-columns: 1fr;
 		padding-left: 3%;
