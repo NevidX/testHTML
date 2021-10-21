@@ -989,7 +989,7 @@ a {
   }
 }
 
-@media (max-width: 320.98px) {
+@media (max-width: 479.98px) {
   .intro__modules-list {
     -webkit-column-gap: 0;
             column-gap: 0;
