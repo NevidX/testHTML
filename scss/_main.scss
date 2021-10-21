@@ -185,6 +185,9 @@ $unicMD: 1124px;
 	@media (max-width: $unicMD) {
 		padding-top: 20px;
 	}
+	@media (max-width: $md5) {
+		column-gap: 0;
+	}
 }
 .intro__module {
 	max-width: 140px;
@@ -200,7 +203,9 @@ $unicMD: 1124px;
 	line-height: 120%;
 	color: #f7f7f7;
 	margin-bottom: 20px;
-
+	@media (max-width: $md5) {
+		font-size: 140px;
+	}
 	img {
 		position: absolute;
 		top: 50px;
@@ -216,6 +221,10 @@ $unicMD: 1124px;
 	height: 50px;
 	font-size: 18px;
 	line-height: 22px;
+	@media (max-width: $md5) {
+		font-size: 15px;
+		width: 300px;
+	}
 }
 
 // ACCESS SECTION======================
@@ -273,6 +282,10 @@ $unicMD: 1124px;
 	@media (max-width: $md4) {
 		font-size: 14px;
 		width: 330px;
+	}
+	@media (max-width: $md5) {
+		font-size: 15px;
+		width: 300px;
 	}
 }
 

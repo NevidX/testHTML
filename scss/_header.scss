@@ -1,5 +1,5 @@
 .header {
-	padding: 16px 5px 18px 5px;
+	padding: 16px 30px 18px 30px;
 	display: flex;
 	justify-content: space-between;
 	max-height: 134px;
@@ -15,6 +15,7 @@
 	@media (max-width: $md2) {
 		display: none;
 	}
+	margin: 0 30px 0 30px;
 }
 .services__head-section {
 	display: flex;
@@ -31,7 +32,18 @@
 		background: none;
 	}
 }
+
 .services__footer-section {
+}
+.services-link__arrow {
+	position: absolute;
+	top: 3px;
+	right: -20px;
+	transform: rotate(180deg);
+	cursor: pointer;
+}
+.services-link__arrow-active {
+	transform: rotate(0);
 }
 .services-links {
 	display: flex;
@@ -44,6 +56,7 @@
 	}
 }
 .services-link {
+	position: relative;
 	a {
 		&:hover {
 			text-decoration: underline;
@@ -61,6 +74,7 @@
 	grid-template-rows: repeat(2, 1fr);
 	column-gap: 1.5em;
 	row-gap: 1.5em;
+	white-space: nowrap;
 	@media (max-width: $md1) {
 		display: none;
 	}
