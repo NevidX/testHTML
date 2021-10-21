@@ -148,6 +148,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .info-link img {
   margin-right: 10px;
+  width: 20px;
+  height: 20px;
 }
 
 .main__logo {
@@ -159,14 +161,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .main__logo-img img {
-  max-width: 81px;
-  max-height: 88px;
+  width: 81px;
+  height: 88px;
 }
 
 @media (max-width: 999.98px) {
   .main__logo-img img {
-    max-width: 51px;
-    max-height: 58px;
+    width: 51px;
+    height: 58px;
   }
 }
 
@@ -356,6 +358,11 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.social-media__link img {
+  width: 30px;
+  height: 30px;
 }
 
 .burger__trigger {
@@ -593,6 +600,11 @@ a {
           justify-content: space-between;
 }
 
+.footer__social-sign img {
+  width: 22px;
+  height: 22px;
+}
+
 .footer__social-text {
   line-height: 300%;
   font-weight: 600;
@@ -728,6 +740,8 @@ a {
 }
 
 .footer__bottom-logo img {
+  width: 18px;
+  height: 18px;
   margin-right: 5px;
 }
 

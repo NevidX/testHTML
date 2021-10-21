@@ -37,6 +37,10 @@ a {
 	justify-content: space-between;
 }
 .footer__social-sign {
+	img {
+		width: 22px;
+		height: 22px;
+	}
 }
 .footer__social-text {
 	line-height: 300%;
@@ -140,6 +144,8 @@ a {
 	font-weight: bold;
 	line-height: 130%;
 	img {
+		width: 18px;
+		height: 18px;
 		margin-right: 5px;
 	}
 	@media (max-width: $md3) {

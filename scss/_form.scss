@@ -9,6 +9,7 @@
 	text-align: center;
 	text-transform: uppercase;
 	color: white;
+
 	border-radius: 8px;
 	cursor: pointer;
 	background: #ea5800;
@@ -26,6 +27,8 @@
 	color: black;
 	img {
 		margin-right: 10px;
+		width: 20px;
+		height: 20px;
 	}
 }
 //=========<Формы>=================
@@ -37,11 +40,11 @@
 }
 .main__logo-img {
 	img {
-		max-width: 81px;
-		max-height: 88px;
+		width: 81px;
+		height: 88px;
 		@media (max-width: $md2) {
-			max-width: 51px;
-			max-height: 58px;
+			width: 51px;
+			height: 58px;
 		}
 	}
 }
