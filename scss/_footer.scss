@@ -59,9 +59,13 @@ a {
 }
 .footer__info-colomn {
 	max-width: 280px;
+	&:not(:last-child) {
+		margin-right: 25px;
+	}
 }
 .footer__info-title {
 	font-weight: bold;
+	white-space: nowrap;
 	font-size: 18px;
 	line-height: 22px;
 	margin-bottom: 32px;

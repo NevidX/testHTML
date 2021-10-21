@@ -77,6 +77,10 @@
 @media (max-width: $md1) {
 	.contacts__adaptive-active {
 		display: grid;
+		position: absolute;
+		background: white;
+		z-index: 11;
+		padding: 0 0 3% 25%;
 	}
 }
 .contacts__info-link {

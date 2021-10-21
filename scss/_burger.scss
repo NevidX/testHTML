@@ -9,6 +9,7 @@ $burgerButtonColor: black;
 		width: 25px;
 		height: 25px;
 		position: absolute;
+		z-index: 12;
 		right: 5%;
 		top: 40%;
 		&:before {
@@ -85,7 +86,8 @@ $burgerButtonColor: black;
 	transition: ease 1s;
 	background-color: white;
 	z-index: 11;
-	position: absolute;
+	position: fixed;
+	top: 0;
 }
 
 .burger__content {
