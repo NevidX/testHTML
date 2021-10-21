@@ -1,5 +1,6 @@
 const trigger = document.querySelectorAll(".burger__trigger");
 const body = document.querySelectorAll(".burger__body");
+const burgerContent = document.querySelector('.burger__content')
 const style = "active";
 const contentHeight = "100%";
 

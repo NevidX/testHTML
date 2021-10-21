@@ -80,16 +80,17 @@ $burgerButtonColor: black;
 	}
 }
 .burger__body {
-	overflow-y: auto;
+	overflow: hidden;
 	width: 100%;
 	transition: ease 1s;
-	background-color: rgba(233, 200, 241, 0.753);
-	z-index: 10;
+	background-color: white;
+	z-index: 11;
 	position: absolute;
 }
 
 .burger__content {
 	padding: 10px 10px 0 10px;
+	height: 70%;
 	overflow-y: auto;
 	overflow-x: hidden;
 	.nav__link {
@@ -101,10 +102,8 @@ $burgerButtonColor: black;
 	.services__head-section {
 		margin-bottom: 40px;
 		height: 80px;
-		@media (max-width: $md3) {
-			flex-direction: column;
-			justify-content: space-between;
-		}
+		flex-direction: column;
+		justify-content: space-between;
 	}
 
 	.services-links {
